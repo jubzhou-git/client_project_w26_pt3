@@ -1,4 +1,4 @@
-.skip a{
+.skip a {
   background: white;
   left: 0;
   padding: 6px;
@@ -14,24 +14,25 @@
   top: 25px;
 }
 
-header{
+header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  font-family: 'Montserrat', 'Merriweather';
 }
 
-nav li{
+nav li {
   display:inline;
-  padding: 10px;
-  font-size: 15px;
+  padding: 3px;
+  font-size: 14px;
   /* top: 20px; */
 }
 
-nav a{
+nav a {
   color: white;
   text-decoration: none;
 }
 
-nav{
+nav {
   background-color: #00274C;
   padding: 40px 0;
   text-align: center;
@@ -42,103 +43,133 @@ nav a:hover, nav a:focus {
   border: 2px dotted purple;
 }
 
+nav a.active {
+  border-bottom: 2px solid white;
+}
+
 :focus {
   border: 5px dashed green;
 }
 
-footer{
+footer {
   background-color: #FFCB05;
   color: black;
   padding: 20px;
   text-align: center;
 }
 
-h1{
+h1 {
   font-size: 20px;
   line-height: 1;
   padding: 20px 0;
   text-align: left;
-  font-family: "Playfair Display", Georgia;
+  font-family: 'Nunito Sans', 'Merriweather';
   font-weight: bold;
   grid-column: 1 / -1;
 }
 
-h2{
+h2 {
   line-height: 1.5;
-  font-family: "Playfair Display", Georgia;
+  font-family: 'Nunito Sans', 'Merriweather';
   font-weight: bold;
   color: #131516;
 }
 
-body{
+body {
   background-color: white;
   line-height: 1.15;
-  font-family: 'Nunito Sans', 'Montserrat', 'Merriweather';
+  font-family: 'Montserrat', 'Merriweather';
 }
 
-img{
+img {
   max-width: 100%;
   height: auto;
 }
 
-#logo{
+#logo {
   width: auto;
   height: 100%;
   grid-column: 4 / -1;
 }
 
-.container{
+.container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 13px;
 }
 
-.intro, .use-resource, .start-here, .connect{
+.intro, .use-resource, .start-here, .connect {
   grid-column: 1 / span 2;
   padding: 10px;
 }
 
-.outreach-overview, .outreach-best-practices, .outreach-worst-practices, .outreach-templates, .outreach-resources{
+.outreach-overview, .outreach-best-practices, .outreach-worst-practices, .outreach-templates, .outreach-resources {
   grid-column: 1 / span 2;
   padding: 10px;
 }
 
-.interview-overview, .interview-process, .interview-resources{
+.interview-overview, .interview-process, .interview-resources {
   grid-column: 1 / span 2;
   padding: 10px;
 }
 
-.resume-intro, .resume-tutorial, .resume-resources, .resume-faq, .resume-other-materials{
+.resume-intro, .resume-tutorial, .resume-resources, .resume-faq, .resume-other-materials {
   grid-column: 1 / span 2;
   padding: 10px;
 }
 
-.resume-tutorial ul, .interview-process ul{
+.resume-tutorial ul, .interview-process ul {
   list-style-type: decimal;
   padding-left: 20px;
 }
 
-.use-resource ul, .popular ul, .start-here ul, .resume-resources ul, .resume-faq ul, .outreach-best-practices ul, .outreach-worst-practices ul, .outreach-resources ul, .outreach-templates ul, .interview-resources ul{
+.use-resource ul, .popular ul, .start-here ul, .resume-resources ul, .resume-faq ul, .outreach-best-practices ul, .outreach-worst-practices ul, .outreach-resources ul, .outreach-templates ul, .interview-resources ul {
   list-style-type: disc;
   padding-left: 20px;
 }
 
-iframe{
+iframe {
   max-width: 100%;
   height: auto;
 }
 
-@media (min-width: 795px) {
-
-nav{
-  /* background-color: #00274C; */
-  /* padding: 25px 0; */
-  text-align: center;
+.popular, .use-resource, .resume-tutorial, .resume-faq, .interview-resources .outreach-best-practices, .outreach-worst-practices {
+  border-top: 1px solid #00274C;
+  border-bottom: 1px solid #00274C;
+  grid-column: 1 / -1;
+  padding: 10px;
 }
 
-nav li{
-  padding: 50px;
+@media (min-width: 750px) {
+
+header {
+  align-items: center;
 }
 
+nav {
+  padding: 88px 0;
+}
+
+nav li {
+  padding: 30px;
+}
+
+.outreach-best-practices, .outreach-templates, .popular {
+  grid-column: 1 / 2;
+}
+
+.outreach-best-practices, .popular, .connect {
+  border-top: 1px solid #00274C;
+  border-bottom: 1px solid #00274C;
+}
+
+.outreach-worst-practices, .outreach-resources, .connect {
+  grid-column: 2 / -1;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+}
 
 }
