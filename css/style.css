@@ -18,13 +18,13 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   font-family: 'Montserrat', 'Merriweather';
+  background-color: #00274C;
 }
 
 nav li {
   display:inline;
   padding: 3px;
   font-size: 14px;
-  /* top: 20px; */
 }
 
 nav a {
@@ -66,6 +66,7 @@ h1 {
   font-family: 'Nunito Sans', 'Merriweather';
   font-weight: bold;
   grid-column: 1 / -1;
+  background-color: white;
 }
 
 h2 {
@@ -73,6 +74,7 @@ h2 {
   font-family: 'Nunito Sans', 'Merriweather';
   font-weight: bold;
   color: #131516;
+  text-decoration: underline #FFCB05 3px;
 }
 
 body {
@@ -84,12 +86,14 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  border-radius: 20px;
 }
 
 #logo {
   width: auto;
-  height: 100%;
+  max-height: 195px;
   grid-column: 4 / -1;
+  border-radius: 0px;
 }
 
 .container {
@@ -140,12 +144,31 @@ iframe {
   padding: 10px;
 }
 
+a {
+  text-decoration: none;
+}
+
 @media (min-width: 750px) {
+
+a:hover {
+  text-decoration: underline;
+}
 
 header {
   align-items: center;
 }
 
+h2 {
+  font-size: 18px;
+}
+
+li {
+  line-height: 2;
+}
+
+p {
+  line-height: 2;
+}
 nav {
   padding: 88px 0;
 }
@@ -154,22 +177,48 @@ nav li {
   padding: 30px;
 }
 
-.outreach-best-practices, .outreach-templates, .popular {
-  grid-column: 1 / 2;
-}
-
-.outreach-best-practices, .popular, .connect {
+.interview-resources {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   border-top: 1px solid #00274C;
   border-bottom: 1px solid #00274C;
 }
 
-.outreach-worst-practices, .outreach-resources, .connect {
+.intro, .start-here {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.outreach-best-practices, .outreach-templates, .popular, .resume-faq, .interview-resources > p, .intro > p, .start-here > img {
+  grid-column: 1 / 2;
+}
+
+.outreach-best-practices {
+  border-top: 1px solid #00274C;
+  border-bottom: 1px solid #00274C;
+}
+
+.resume-faq, .popular {
+  border: 0;
+}
+
+.resume-resources, .start-here {
+  border-bottom: 1px solid #00274C;
+}
+
+.outreach-worst-practices, .outreach-resources, .connect, .resume-other-materials, .start-here ul, .start-here h2 {
   grid-column: 2 / -1;
+}
+
+.start-here li {
+  font-size: 18px;
 }
 
 iframe {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 }
