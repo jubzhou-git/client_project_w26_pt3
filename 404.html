@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>404 Page</title>
+</head>
+
+<body>
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <header>
+    <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html">Resumes</a></li>
+      <li><a href="networking.html" class="active">Networking</a></li>
+      <li><a href="interviews.html">Interviews</a></li>
+    </ul>
+    </nav>
+    <img id="logo" src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+    <h1 class="error-header">Uh oh, something went wrong!</h1>
+    </header>
+
+    <main class="error-container" id="main">
+        <div class="error">
+            <h2>404: Page Not Found</h2>
+            <p>
+                We think a diag squirrel may have stolen the page and hid it somewhere.
+                The pages it hasn't stole are still up top. Try going there!
+            </p>
+            <img id="missing" src="images/UMSI_Literature_vs_Traffic_01.JPG" alt="Thousands of books flipped open are littered on the ground, and no words or pages are legible.">
+        </div>
+    </main>
+
+<footer>
+<p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
+<p>© Copyright <span id='year'></span> Regents of the University of Michigan</p>
+<script>
+    document.querySelector('#year').innerHTML = new Date().getFullYear();
+</script>
+</footer>
+
+</body>
+</html>

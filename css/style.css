@@ -217,4 +217,36 @@ iframe {
   height: 100%;
 }
 
+.error {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: stretch;
+  align-items: center;
+}
+
+.error-container h2 {
+  grid-column: 1 / 2;
+  font-size: 30px;
+  text-align: center;
+  padding: 50px;
+}
+.error-container p {
+  grid-column: 2 / -1;
+  text-align: left;
+  padding: 20px;
+  font-size: 20px;
+}
+
+#missing {
+  grid-column: 1 / -1;
+  height: auto;
+}
+
+.error-header {
+  text-align: center;
+  font-size: 50px;
+  padding: 50px;
+  border-bottom: 1px solid #00274C;
+}
+
 }
